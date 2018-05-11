@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/iwharris/rainbot.svg?style=svg)](https://circleci.com/gh/iwharris/rainbot)
 
+[![codecov](https://codecov.io/gh/iwharris/rainbot/branch/master/graph/badge.svg)](https://codecov.io/gh/iwharris/rainbot)
+
 A simple Node.js service that fetches local rain forecasts and exposes them to home irrigation systems via an API.
 
 ## Installation
