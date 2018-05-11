@@ -11,4 +11,14 @@ A simple Node.js service that fetches local rain forecasts and exposes them to h
 
 ## Usage
 
-Run the development server using `npm run dev` or `yarn dev`.
+### Run the dev server
+
+`npm run dev` or `yarn dev`.
+
+### Lint
+
+`npm run lint` or `yarn lint`.
+
+### Run Tests
+
+`npm test` or `yarn test`.

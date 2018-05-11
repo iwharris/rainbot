@@ -33,7 +33,10 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      # lint has to pass
+      - run: yarn lint
+
       # run tests!
-      - run: yarn test
+      - run: yarn test --coverage
 
-
+      - run: curl -s https://codecov.io/bash | bash -s -- -t "${CODECOV_TOKEN}"

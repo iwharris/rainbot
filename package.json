@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/server.js -x babel-node -e js",
+    "lint": "eslint src test",
     "test": "jest"
   },
   "dependencies": {
