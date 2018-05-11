@@ -7,7 +7,7 @@ A simple Node.js service that fetches local rain forecasts and exposes them to h
 ## Installation
 
 1. Clone the repo to a local directory.
-1. Install dependencies: `npm install` or `yarn`
+1. Install dependencies: `npm install` or `yarn install`.
 
 ## Usage
 

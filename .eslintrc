@@ -2,6 +2,14 @@
   "root": true,
   "extends": "airbnb-base",
 
+  "env": {
+    "jest/globals": true
+  },
+
+  "plugins": [
+    "jest"
+  ],
+
   "rules": {
     "max-len": ["warn", 180],
     "no-console": ["error"]

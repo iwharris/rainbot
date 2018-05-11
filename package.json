@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon src/server.js -x babel-node -e js"
+    "dev": "nodemon src/server.js -x babel-node -e js",
+    "test": "jest"
   },
   "dependencies": {
     "debug": "~2.6.9",
@@ -17,6 +18,9 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
-    "nodemon": "^1.17.4"
+    "eslint-plugin-jest": "^21.15.1",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.4",
+    "supertest": "^3.0.0"
   }
 }
