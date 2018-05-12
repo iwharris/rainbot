@@ -1,4 +1,5 @@
 import express from 'express';
+import config from 'config';
 import logger from 'morgan';
 
 import indexRouter from './routes/index';
@@ -7,8 +8,8 @@ export default function createApp() {
   const app = express();
 
   // Middleware
-  app.use(logger('dev'));
-  app.use(express.json());
+  app.use(logger(config.get('morgan')));
+  app.use(express.json(config.get('express.json')));
 
   // Routes
   app.use('/', indexRouter);
