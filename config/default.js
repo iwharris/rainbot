@@ -3,4 +3,8 @@ module.exports = {
   express: {
     json: {},
   },
+  openweathermap: {
+    baseUrl: 'https://api.openweathermap.org',
+    apiKey: '',
+  },
 };
