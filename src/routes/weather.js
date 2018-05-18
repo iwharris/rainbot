@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import express from 'express';
 
 import getCurrentWeather from '../service/openweathermap';
@@ -5,10 +6,9 @@ import getCurrentWeather from '../service/openweathermap';
 const router = express.Router();
 
 router.get('/currentWeather', (req, res) => {
-  const { cityName } = req.query;
-  getCurrentWeather(cityName)
-    .then(response => res.json(response))
-    .catch(error => res.json({ error }));
+  const city = _.lowerCase(req.query.city);
+  return getCurrentWeather(city)
+    .then(response => res.json(response));
 });
 
 export default router;
